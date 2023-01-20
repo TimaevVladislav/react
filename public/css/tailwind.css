@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: #161B28;
+}
+
+.navbar_dashboard {
+    background: #161B28;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+    color: #919EAB;
+}
+
+p, tbody {
+    color: #313645;
+}
+
+.button-custom {
+    background: #15A655;
+    box-shadow: 0px 10px 30px rgba(21, 166, 85, 0.3);
+    border-radius: 34px;
+}
+
+.border-custom {
+    border-color: red;
+    border-bottom: 1px solid;
+    border-radius: 0px;
+}
+
+.input-custom {
+    color: white;
+    border: 1px solid;
+}

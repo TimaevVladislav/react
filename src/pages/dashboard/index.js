@@ -1,0 +1,5 @@
+export * from "@/pages/dashboard/home"
+export * from "@/pages/dashboard/refferral.jsx"
+export * from "@/pages/dashboard/settings.jsx"
+export * from "@/pages/dashboard/rates.jsx"
+export * from "@/pages/dashboard/payment.jsx"
