@@ -1,9 +1,10 @@
 import React from "react"
 import {Heading} from "@/components/Heading.jsx"
 import {TableHome} from "@/components/Table.jsx"
-import {DashboardNavbar} from "@/widgets/layout/index.js"
+import {DashboardNavbar, Sidenav} from "@/widgets/layout/index.js"
 
 import middle from "/public/icons/main-icons/middle.svg"
+import routes from "@/routes.jsx"
 
 const TableFields = () => (
   <tbody className="font-bold text-[#919EAB]">
@@ -48,47 +49,21 @@ const TableFields = () => (
   </tbody>
 )
 
-const HomeTable = () => {
+export function Home() {
   return (
-
-    <div className="flex flex-col border-0">
-      <div className="overflow-x-auto">
-        <div className="py-2 inline-block">
-            <table className="rounded-[7px] font-bold" >
-             <thead className="text-white bg-[#21283B] rounded-md">
-              <tr>
-                <td className="px-6 py-4 text-sm">
-                  Аккаунт
-                </td>
-                <td className="text-sm py-4">
-                  accteam@mail.ru
-                </td>
-              </tr>
-              </thead>
-              <TableFields />
-            </table>
+    <div className="flex">
+        <Sidenav routes={routes} brandImg="/logo.png" />
+      <div>
+        <DashboardNavbar icon={middle} />
+        <div className="mt-12">
+          <Heading heading="Обзор" />
+          <div className="rounded-[7px]">
+            <TableHome account="Аккаунт" email="accteam@mail.ru" />
+          </div>
         </div>
       </div>
     </div>
   )
 }
 
-
-export function Home() {
-  return (
-    <>
-      <DashboardNavbar icon={middle} />
-      <div className="mt-12">
-        <Heading heading="Обзор" />
-        <div className="rounded-[7px]">
-          <TableHome account="Аккаунт" email="accteam@mail.ru" />
-        </div>
-        <div className="mb-4 grid grid-cols-1 gap-6 xl:grid-cols-3">
-
-        </div>
-      </div>
-    </>
-  );
-}
-
-export default Home;
+export default Home

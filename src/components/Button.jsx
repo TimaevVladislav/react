@@ -12,11 +12,11 @@ export const Button = () => (
     </div>
   </div>
 )
-export const ButtonPayment = () => (
+export const ButtonPayment = ({ title }) => (
  <>
    <div className="justify-center">
-     <button type="button" className="bg-[#15A655] rounded-[34px] text-white hover:bg-[#15A655] hover:border-0 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-1 text-sm px-4 py-1 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 ">
-       Оплатить
+     <button type="button" className="bg-[#15A655] rounded-[34px] text-white hover:bg-[#15A655] hover:border-0 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-1 text-sm px-4 py-2 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 ">
+       {title}
      </button>
    </div>
  </>

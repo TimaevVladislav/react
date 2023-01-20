@@ -14,9 +14,8 @@ export function Dashboard() {
 
   return (
     <div className="flex m-auto">
-      <div className="p-4 xl:ml-80 bg-[#131621] rounded-[25px]">
+      <div className="p-4 xl:ml-80 bg-[#161A27] rounded-[25px]">
         <Configurator />
-        <Sidenav routes={routes} brandImg="/logo.png" />
         <IconButton
           size="lg"
           color="white"

@@ -13,9 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <ThemeProvider>
         <MaterialTailwindControllerProvider>
-          <div className="rounded-[5px] border-[red]">
             <App />
-          </div>
         </MaterialTailwindControllerProvider>
       </ThemeProvider>
     </BrowserRouter>

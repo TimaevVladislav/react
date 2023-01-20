@@ -2,7 +2,7 @@ import React from "react"
 import {Heading} from "@/components/Heading.jsx"
 import {InputPayment} from "@/components/Inputs.jsx"
 import {ButtonPayment} from "@/components/Button.jsx"
-import {DashboardNavbar} from "@/widgets/layout/index.js"
+import { DashboardNavbar, Sidenav } from "@/widgets/layout/index.js";
 
 
 import team from "/public/icons/main-icons/team.svg"
@@ -13,6 +13,7 @@ import micro from "../../../public/icons/main-icons/micro.svg"
 import bitcoin from "../../../public/icons/payment/bitcoin.svg"
 import master from "../../../public/icons/payment/master.svg"
 import paypal from "../../../public/icons/payment/paypal.svg"
+import routes from "@/routes.jsx";
 
 
 
@@ -119,7 +120,7 @@ const PaymentCard = () => {
       </div>
       <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/3 p-4 pt-0">
         <div className="h-[402px] c-card block bg-[#131621] shadow-md hover:shadow-xl rounded-lg overflow-hidden">
-          <div className="p-4 pt-0">
+          <div className="pt-0">
                 <span className="flex items-center text-[16px] rounded-[5px] inline-block py-4 leading-none text-white font-semibold text-xs">
                   Итого
                 </span>
@@ -157,7 +158,7 @@ const PaymentCard = () => {
               </div>
             </div>
           </div>
-          <div className="p-4 pt-0">
+          <div className="pt-0">
             <div className="flex justify-between items-center pl-4 rounded-[5px] inline-block px-2 py-2 leading-none text-white font-semibold text-xs">
               <div className="rounded-[6px] items-center">
                 Стоимость тарифа
@@ -191,12 +192,12 @@ const PaymentCard = () => {
               </div>
             </div>
           </div>
-          <div className="p-4 pt-0">
+          <div className="pt-0">
             <h2 className="text-[30px] pt-[17px] pb-[17px] text-base text-white font-bold text-center">
               $125
             </h2>
             <div className="flex justify-center items-center pl-4 rounded-[5px] inline-block px-2 py-2 leading-none text-white font-semibold text-xs">
-              <ButtonPayment />
+              <ButtonPayment title="Оплатить" />
             </div>
           </div>
         </div>
@@ -208,15 +209,18 @@ const PaymentCard = () => {
 
 export function Payment () {
   return (
-    <>
-      <DashboardNavbar icon={team} />
-      <div className="mx-auto my-20 flex max-w-screen-lg flex-col gap-8">
-        <Heading heading="Оплата" />
-        <div className="relative overflow-x-auto shadow-md sm:rounded-lg text-white font-bold">
-         <PaymentCard />
+    <div className="flex">
+      <Sidenav routes={routes} brandImg="/logo.png" />
+      <div>
+        <DashboardNavbar icon={team} />
+        <div className="mx-auto my-20 flex max-w-screen-lg flex-col gap-8">
+          <Heading heading="Оплата" />
+          <div className="relative overflow-x-auto shadow-md sm:rounded-lg text-white font-bold">
+            <PaymentCard />
+          </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 export default Payment

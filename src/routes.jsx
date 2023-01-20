@@ -15,35 +15,30 @@ export const routes = [
       {
         icon: view,
         name: "Обзор",
-        title: "Лицензии до:",
         path: "/midddle",
         element: <Home />
       },
       {
         icon: refferral,
         name: "Реферальная программа",
-        title: "Лицензии до:",
         path: "/free",
         element: <Refferral />
       },
       {
         icon: settings,
         name: "Настройки",
-        title: "Лицензии до:",
         path: "/micro",
         element: <Settings />
       },
       {
         icon: rates,
         name: "Тарифы",
-        title: "Лицензии до:",
         path: "/base",
         element: <Rates />
       },
       {
         icon:  payment,
         name: "Оплата",
-        title: "",
         path: "/team",
         element: <Payment />,
       },
