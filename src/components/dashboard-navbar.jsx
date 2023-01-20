@@ -12,7 +12,7 @@ import { Range } from "@/components/Range.jsx";
 const SelectLanguage = () => {
   return (
     <>
-      <select className="bg-[#1A1E2D] p-0 text-white font-bold text-[#15A655] text-[12px] mr-7">
+      <select className="bg-[#161A27] p-0 text-white font-bold text-[#15A655] text-[12px] mr-7">
         <option>En</option>
       </select>
     </>

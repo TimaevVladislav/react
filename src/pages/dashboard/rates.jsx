@@ -7,6 +7,7 @@ import micro from "/public/icons/main-icons/micro.svg"
 import base from "/public/icons/main-icons/base.svg"
 import middle from "/public/icons/main-icons/middle.svg"
 import team from "/public/icons/main-icons/team.svg"
+import select from "/public/icons/select.svg"
 import routes from "@/routes.jsx"
 
 export function Rates() {
@@ -137,6 +138,12 @@ export function Rates() {
                    <h2 className="text-base text-white font-bold text-center">
                      профилей
                    </h2>
+                   <div className="flex justify-center rounded-[6px] items-center font-bold text-white pt-1 pb-1">
+                     <button className="bg-[#1A1E2D] rounded-[21px] w-[20px] h-[19.37px] mr-1">-</button>
+                     <button className="bg-[#1A1E2D] rounded-[21px] w-[56px] h-[23.25px]">2</button>
+                     <button className="bg-[#1A1E2D] rounded-[21px] w-[20px] h-[19.37px] ml-1">+</button>
+                   </div>
+
                    <h2 className="text-base text-white font-bold text-center">
                      по $15
                    </h2>
@@ -172,6 +179,15 @@ export function Rates() {
                  <div className="p-4 border-t border-[#242937] border-b text-xs text-gray-700">
                    <h2 className="text-base text-white font-bold text-center">по $199</h2>
                    <h2 className="text-[#A2A8B6] text-[10.5px] font-bold text-center">за каждые 1500 профилей</h2>
+                   <span className="text-[#15A655] flex items-center justify-center rounded-[5px] bg-[#1F232C] inline-block px-2 py-2 leading-none text-white font-semibold text-xs">
+                   <img src={select} alt="icon" className="pr-1" />
+                    4500
+                   </span>
+                   <div className="flex justify-center rounded-[6px] items-center font-bold text-white pt-2 pb-2">
+                     <button className="bg-[#1A1E2D] rounded-[21px] w-[20px] h-[19.37px] mr-1">-</button>
+                     <button className="bg-[#1A1E2D] rounded-[21px] w-[56px] h-[23.25px]">2</button>
+                     <button className="bg-[#1A1E2D] rounded-[21px] w-[20px] h-[19.37px] ml-1">+</button>
+                   </div>
                    <h2 className="text-base text-white font-bold text-center">5</h2>
                    <h2 className="text-base text-white font-bold text-center">профилей</h2>
                    <h2 className="text-base text-white font-bold text-center">по $15</h2>

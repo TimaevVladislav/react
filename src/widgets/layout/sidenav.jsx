@@ -9,7 +9,7 @@ import website from "/public/icons/website.svg"
 import light from "/public/icons/light.svg"
 
 
-import { Button, IconButton } from "@material-tailwind/react"
+import { IconButton } from "@material-tailwind/react"
 
 
 import { useMaterialTailwindController, setOpenSidenav } from "@/context"
@@ -74,22 +74,6 @@ export function Sidenav({ brandImg, brandName, routes }) {
       </div>
       <div className="relative border-b border-[#242937]"></div>
       <FooterDashboard />
-      <div className="flex justify-between gap-4 px-8 text-[#313645] font-bold">
-        <div className="flex">
-          <img src={light} alt="light" />
-          <p className="text-[10px] leading-3 m-auto pl-1">
-            Светлый
-          </p>
-        </div>
-        <div className="flex">
-          <div>
-            <img className="h-[17px] w-[17px]" src={website} alt="website" />
-          </div>
-          <p className="text-[10px] leading-3 m-auto pl-1">
-            На сайт
-          </p>
-        </div>
-      </div>
     </div>
   )
 }

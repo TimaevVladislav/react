@@ -2,7 +2,7 @@ import React from "react"
 import {Heading} from "@/components/Heading.jsx"
 import {InputPayment} from "@/components/Inputs.jsx"
 import {ButtonPayment} from "@/components/Button.jsx"
-import { DashboardNavbar, Sidenav } from "@/widgets/layout/index.js";
+import {DashboardNavbar, Sidenav} from "@/widgets/layout/index.js"
 
 
 import team from "/public/icons/main-icons/team.svg"
@@ -13,9 +13,7 @@ import micro from "../../../public/icons/main-icons/micro.svg"
 import bitcoin from "../../../public/icons/payment/bitcoin.svg"
 import master from "../../../public/icons/payment/master.svg"
 import paypal from "../../../public/icons/payment/paypal.svg"
-import routes from "@/routes.jsx";
-
-
+import routes from "@/routes.jsx"
 
 const SelectPeriod = () => {
   return (
@@ -26,7 +24,6 @@ const SelectPeriod = () => {
     </>
   )
 }
-
 const PaymentCard = () => {
   return (
     <div className="flex text-start bg-[#131621]">
@@ -211,13 +208,11 @@ export function Payment () {
   return (
     <div className="flex">
       <Sidenav routes={routes} brandImg="/logo.png" />
-      <div>
+      <div className="mx-auto my-20 flex max-w-screen-lg flex-col gap-8">
         <DashboardNavbar icon={team} />
-        <div className="mx-auto my-20 flex max-w-screen-lg flex-col gap-8">
-          <Heading heading="Оплата" />
-          <div className="relative overflow-x-auto shadow-md sm:rounded-lg text-white font-bold">
-            <PaymentCard />
-          </div>
+        <Heading heading="Оплата" />
+        <div className="relative overflow-x-auto shadow-md sm:rounded-lg text-white font-bold">
+         <PaymentCard />
         </div>
       </div>
     </div>

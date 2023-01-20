@@ -7,10 +7,10 @@ import {
   Footer,
 } from "@/widgets/layout"
 import routes from "@/routes"
-import { useMaterialTailwindController, setOpenConfigurator } from "@/context"
+import {useMaterialTailwindController, setOpenConfigurator} from "@/context"
 
 export function Dashboard() {
-  const [controller, dispatch] = useMaterialTailwindController();
+  const [controller, dispatch] = useMaterialTailwindController()
 
   return (
     <div className="flex m-auto">
