@@ -7,7 +7,6 @@ import { ThemeProvider } from "@material-tailwind/react"
 import { MaterialTailwindControllerProvider } from "@/context"
 import "../public/css/tailwind.css"
 
-// #131621
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
