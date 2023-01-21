@@ -17,11 +17,28 @@ const RateIcons = ({icon, title}) => (
   </span>
 )
 
-const RateButton = () => (
-  <div className="flex justify-center">
-    <button type="button" className="border-solid border-2 border-white rounded-[34px] text-white hover:bg-[#15A655] hover:border-0 font-medium rounded-1 text-sm px-4 py-1 text-center inline-flex items-center">
-      Оплатить
-    </button>
+const RateButton = ({price}) => (
+  <>
+    <h2 className="text-[30px] text-base text-white font-bold text-center">
+      ${price}
+    </h2>
+    <div className="flex justify-center">
+      <button type="button" className="border-solid border-2 border-white rounded-[34px] text-white hover:bg-[#15A655] hover:border-0 font-medium rounded-1 text-sm px-4 py-1 text-center inline-flex items-center">
+        Оплатить
+      </button>
+    </div>
+  </>
+)
+
+const Profiles = ({amount}) => (
+  <div className="p-4 h-[120px] border-t  border-b border-[#242937] text-xs text-gray-700">
+    <h2 className="text-base text-white font-bold text-center">
+      {amount}
+
+    </h2>
+    <h2 className="text-base text-white font-bold text-center">
+      профилей
+    </h2>
   </div>
 )
 
@@ -43,19 +60,9 @@ export function Rates() {
                      Весь функционал
                    </h2>
                  </div>
-                 <div className="p-4 border-t border-[#242937] border-b text-xs text-gray-700">
-                   <h2 className="text-base text-white font-bold text-center">
-                     5
-                   </h2>
-                   <h2 className="text-base text-white font-bold text-center">
-                     профилей
-                   </h2>
-                 </div>
-                 <h2 className="text-[30px] text-base text-white font-bold text-center">
-                   $0
-                 </h2>
-                 <RateButton />
-               </div>
+                 <Profiles amount={5} />
+                 <RateButton price={5} />
+                </div>
              </div>
 
              <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4">
@@ -69,19 +76,8 @@ export function Rates() {
                      Создание команды
                    </h2>
                  </div>
-
-                 <div className="p-4 border-t border-[#242937] border-b text-xs text-gray-700">
-                   <h2 className="text-base text-white font-bold text-center">
-                     50
-                   </h2>
-                   <h2 className="text-base text-white font-bold text-center">
-                     профилей
-                   </h2>
-                 </div>
-                 <h2 className="text-[30px] pt-[17px] pb-[17px] text-base text-white font-bold text-center">
-                   $29
-                 </h2>
-                 <RateButton />
+                 <Profiles amount={50} />
+                 <RateButton price={29} />
                </div>
              </div>
 
@@ -96,18 +92,8 @@ export function Rates() {
                      Создание команды
                    </h2>
                  </div>
-                 <div className="p-4 border-t border-[#242937] border-b text-xs text-gray-700">
-                   <h2 className="text-base text-white font-bold text-center">
-                     150
-                   </h2>
-                   <h2 className="text-base text-white font-bold text-center">
-                     профилей
-                   </h2>
-                 </div>
-                 <h2 className="text-[30px] pt-[17px] pb-[17px] text-base text-white font-bold text-center">
-                   $79
-                 </h2>
-                 <RateButton />
+                 <Profiles amount={150} />
+                 <RateButton price={79} />
                </div>
              </div>
              <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4">
@@ -121,9 +107,10 @@ export function Rates() {
                      Создание команды
                    </h2>
                  </div>
+
                  <div className="p-4 border-t border-[#242937] border-b text-xs text-gray-700">
                    <h2 className="text-base text-white font-bold text-center">
-                     500
+                     $500
                    </h2>
                    <h2 className="text-base text-white font-bold text-center">
                      профилей
@@ -133,7 +120,6 @@ export function Rates() {
                      <button className="bg-[#1A1E2D] rounded-[21px] w-[56px] h-[23.25px]">2</button>
                      <button className="bg-[#1A1E2D] rounded-[21px] w-[20px] h-[19.37px] ml-1">+</button>
                    </div>
-
                    <h2 className="text-base text-white font-bold text-center">
                      по $15
                    </h2>
@@ -141,10 +127,7 @@ export function Rates() {
                      за пользователя
                    </h2>
                  </div>
-                 <h2 className="text-[30px] pt-[17px] pb-[17px] text-base text-white font-bold text-center">
-                   $199
-                 </h2>
-                 <RateButton />
+                 <RateButton price={199} />
                </div>
              </div>
 
@@ -166,6 +149,7 @@ export function Rates() {
                    <img src={select} alt="icon" className="pr-1" />
                     4500
                    </span>
+
                    <div className="flex justify-center rounded-[6px] items-center font-bold text-white pt-2 pb-2">
                      <button className="bg-[#1A1E2D] rounded-[21px] w-[20px] h-[19.37px] mr-1">-</button>
                      <button className="bg-[#1A1E2D] rounded-[21px] w-[56px] h-[23.25px]">2</button>
@@ -176,10 +160,7 @@ export function Rates() {
                    <h2 className="text-base text-white font-bold text-center">по $15</h2>
                    <h2 className="text-sm text-[#A2A8B6] font-bold text-center">за пользователя</h2>
                  </div>
-                 <h2 className="text-[30px] pt-[17px] pb-[17px] text-base text-white font-bold text-center">
-                   $399
-                 </h2>
-                 <RateButton />
+                 <RateButton price={399} />
                </div>
              </div>
            </div>

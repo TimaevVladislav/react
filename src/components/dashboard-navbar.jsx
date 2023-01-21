@@ -1,3 +1,4 @@
+import React from "react"
 import { useLocation } from "react-router-dom"
 import { Navbar, IconButton } from "@material-tailwind/react"
 import { Bars3Icon } from "@heroicons/react/24/solid"
@@ -6,15 +7,16 @@ import { useMaterialTailwindController, setOpenSidenav } from "@/context/index.j
 import message from "/public/icons/message.svg"
 import bell from "/public/icons/bell.svg"
 import avatar from "/public/images/avatar.png"
-import React from "react";
-import { Range } from "@/components/Range.jsx";
+import select from "../../public/icons/select.svg"
+import {Range} from "@/components/Range.jsx"
 
 const SelectLanguage = () => {
   return (
     <>
-      <select className="bg-[#161A27] p-0 text-white font-bold text-[#15A655] text-[12px] mr-7">
-        <option>En</option>
-      </select>
+       <span className="pr-[20px] rounded-[0] border-r-[1px] border-[#1F232D] text-[#15A655] flex items-center justify-center rounded-[5px] inline-block px-2 py-2 leading-none text-white font-semibold text-xs">
+        <img src={select} alt="icon" className="pr-1" />
+        En
+       </span>
     </>
   )
 }
@@ -43,10 +45,9 @@ export function DashboardNavbar({icon}) {
           <Range />
         </div>
 
-
         <div className="flex items-center">
           <SelectLanguage />
-         <div className="p-4">
+         <div className="p-4 ml-2">
            <img src={message} alt="message" />
          </div>
 
