@@ -116,7 +116,7 @@ const PaymentCard = () => {
         </div>
       </div>
       <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/3 p-4 pt-0">
-        <div className="h-[402px] c-card block bg-[#131621] shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+        <div className="h-[360px] c-card block bg-modal shadow-md hover:shadow-xl rounded-lg overflow-hidden">
           <div className="pt-0">
                 <span className="flex items-center text-[16px] rounded-[5px] inline-block py-4 leading-none text-white font-semibold text-xs">
                   Итого
@@ -190,7 +190,7 @@ const PaymentCard = () => {
             </div>
           </div>
           <div className="pt-0">
-            <h2 className="text-[30px] pt-[17px] pb-[17px] text-base text-white font-bold text-center">
+            <h2 className="text-[30px] pt-[17px] pb-[17px] leading-[0] text-white font-bold text-center">
               $125
             </h2>
             <div className="flex justify-center items-center pl-4 rounded-[5px] inline-block px-2 py-2 leading-none text-white font-semibold text-xs">
