@@ -22,7 +22,7 @@ const SelectLanguage = () => {
   )
 }
 
-export function DashboardNavbar({icon, title, progressColor, progressWidth}) {
+export function DashboardNavbar({icon, title, color, width, progressTitle}) {
   const [controller, dispatch] = useMaterialTailwindController()
   const { fixedNavbar, openSidenav } = controller
 
@@ -42,10 +42,7 @@ export function DashboardNavbar({icon, title, progressColor, progressWidth}) {
           <h1 className="m-auto ml-[10px] text-[#15A655] text-xs font-bold leading-3 not-italic">
             {page}
           </h1>
-          <Range
-            progressColor={progressColor}
-            progressWidth={progressWidth}
-          />
+          <Range title={progressTitle} color={color} width={width} />
         </div>
 
         <div className="flex items-center">
@@ -58,7 +55,7 @@ export function DashboardNavbar({icon, title, progressColor, progressWidth}) {
             <img src={bell} alt="bell" />
           </div>
 
-          <AvatarNavbar title={title}/>
+          <AvatarNavbar title={title} />
 
           <IconButton
             variant="text"

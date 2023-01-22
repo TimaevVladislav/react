@@ -206,20 +206,18 @@ const PaymentCard = () => {
 
 export function Payment () {
 
-  const progressRange = {
-    color: "progress-payment h-1.5 rounded-full",
-    width: "w-[4px]"
-  }
+  const progressRange = { title: "Купить лицензию", color: "progress-payment h-1.5 rounded-full", width: "w-[4px]" }
 
   return (
     <div className="flex">
       <Sidenav routes={routes} brandImg="/logo.png" />
       <div className="mx-auto my-20 flex max-w-screen-lg flex-col gap-8">
         <DashboardNavbar
-          icon={team}
           title={"ksy92"}
-          progressColor={progressRange.color}
-          progressWidth={progressRange.width}
+          icon={team}
+          progressTitle={progressRange.title}
+          color={progressRange.color}
+          width={progressRange.width}
         />
         <Heading heading="Оплата" />
         <div className="relative overflow-x-auto shadow-md sm:rounded-lg text-white font-bold">

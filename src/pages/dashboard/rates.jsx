@@ -56,8 +56,8 @@ export function Rates() {
        <DashboardNavbar
          icon={base}
          title={"ksy92"}
-         progressColor={progressRange.color}
-         progressWidth={progressRange.width}
+         color={progressRange.color}
+         width={progressRange.width}
        />
        <div className="mx-auto my-20 flex max-w-screen-lg flex-col gap-1">
          <Heading heading="Тарифы" />

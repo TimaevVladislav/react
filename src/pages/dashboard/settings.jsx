@@ -18,8 +18,8 @@ export function Settings() {
        <DashboardNavbar
          icon={micro}
          title={"ksy92"}
-         progressColor={progressRange.color}
-         progressWidth={progressRange.width}
+         color={progressRange.color}
+         width={progressRange.width}
        />
        <div className="mt-12 mb-8 flex flex-col gap-12">
          <Heading heading="Настройки" />

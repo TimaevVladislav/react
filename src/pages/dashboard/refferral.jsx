@@ -22,8 +22,8 @@ export function Refferral() {
         <DashboardNavbar
           icon={free}
           title={"ksy92"}
-          progressColor={progressRange.color}
-          progressWidth={progressRange.width}
+          color={progressRange.color}
+          width={progressRange.width}
         />
         <div className="mx-auto my-20 flex max-w-screen-lg flex-col gap-8">
           <div>

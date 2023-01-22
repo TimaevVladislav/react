@@ -64,8 +64,8 @@ export function Home() {
         <DashboardNavbar
           icon={middle}
           title={"accteam ..."}
-          progressColor={progressRange.color}
-          progressWidth={progressRange.width}
+          color={progressRange.color}
+          width={progressRange.width}
         />
         <div className="mt-12">
           <Heading heading="Обзор" />
