@@ -2,7 +2,7 @@ import React from "react"
 
 const ProgressBar = ({color, width}) => (
   <>
-    <div className="w-[160px] ml-[45px] bg-[#2A2F41] rounded-full h-1.5 mb-4 dark:bg-gray-700">
+    <div className="w-[160px] ml-[45px] bg-[#2A2F41] rotate-180 rounded-full h-1.5 mb-4 dark:bg-gray-700">
       <div className={`${color}  ${width}`}></div>
     </div>
   </>
