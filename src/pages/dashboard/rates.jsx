@@ -43,11 +43,22 @@ const Profiles = ({amount}) => (
 )
 
 export function Rates() {
+
+  const progressRange = {
+    color: "progress-rates h-1.5 rounded-full",
+    width: "w-[19px]"
+  }
+
   return (
    <div className="flex">
      <Sidenav routes={routes} brandImg="/logo.png" />
      <div>
-       <DashboardNavbar icon={base} title={"ksy92"} />
+       <DashboardNavbar
+         icon={base}
+         title={"ksy92"}
+         progressColor={progressRange.color}
+         progressWidth={progressRange.width}
+       />
        <div className="mx-auto my-20 flex max-w-screen-lg flex-col gap-1">
          <Heading heading="Тарифы" />
          <div className="container mx-auto">

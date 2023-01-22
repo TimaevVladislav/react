@@ -5,11 +5,22 @@ import micro from "../../../public/icons/main-icons/micro.svg"
 import routes from "@/routes.jsx"
 
 export function Settings() {
+
+  const progressRange = {
+    color: "progress-settings h-1.5 rounded-full",
+    width: "w-[48px]"
+  }
+
   return (
    <div className="flex">
      <Sidenav routes={routes} brandImg="/logo.png" />
      <div>
-       <DashboardNavbar icon={micro} title={"ksy92"} />
+       <DashboardNavbar
+         icon={micro}
+         title={"ksy92"}
+         progressColor={progressRange.color}
+         progressWidth={progressRange.width}
+       />
        <div className="mt-12 mb-8 flex flex-col gap-12">
          <Heading heading="Настройки" />
        </div>

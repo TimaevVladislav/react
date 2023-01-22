@@ -1,5 +1,5 @@
 import React from "react"
-import {Table} from "@/components/Table.jsx"
+import {Tables} from "@/components/Tables.jsx"
 import {CardRefferral, CardStatistics} from "@/components/CardRefferral.jsx"
 import {DashboardNavbar, Sidenav} from "@/widgets/layout/index.js"
 
@@ -9,11 +9,22 @@ import routes from "@/routes.jsx"
 const Pagination = () => null
 
 export function Refferral() {
+
+  const progressRange = {
+    color: "progress-refferral h-1.5 rounded-full",
+    width: "w-[82px]"
+  }
+
   return (
     <div className="flex">
       <Sidenav routes={routes} brandImg="/logo.png" />
       <div>
-        <DashboardNavbar icon={free} title={"ksy92"} />
+        <DashboardNavbar
+          icon={free}
+          title={"ksy92"}
+          progressColor={progressRange.color}
+          progressWidth={progressRange.width}
+        />
         <div className="mx-auto my-20 flex max-w-screen-lg flex-col gap-8">
           <div>
             <div className="flex justify-between">
@@ -21,7 +32,7 @@ export function Refferral() {
               <CardStatistics />
             </div>
           </div>
-          <Table date="12.05.2023" email="accteam@mail.ru" price="$5454" />
+          <Tables date="12.05.2023" email="accteam@mail.ru" price="$5454" />
         </div>
       </div>
     </div>

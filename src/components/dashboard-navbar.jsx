@@ -7,8 +7,9 @@ import { useMaterialTailwindController, setOpenSidenav } from "@/context/index.j
 import message from "/public/icons/message.svg"
 import bell from "/public/icons/bell.svg"
 import select from "../../public/icons/select.svg"
-import {Range} from "@/components/Range.jsx"
-import { AvatarNavbar } from "@/components/Avatars.jsx";
+
+import {Range} from "@/components/Ranges.jsx"
+import {AvatarNavbar} from "@/components/Avatars.jsx"
 
 const SelectLanguage = () => {
   return (
@@ -21,7 +22,7 @@ const SelectLanguage = () => {
   )
 }
 
-export function DashboardNavbar({icon, title}) {
+export function DashboardNavbar({icon, title, progressColor, progressWidth}) {
   const [controller, dispatch] = useMaterialTailwindController()
   const { fixedNavbar, openSidenav } = controller
 
@@ -41,7 +42,10 @@ export function DashboardNavbar({icon, title}) {
           <h1 className="m-auto ml-[10px] text-[#15A655] text-xs font-bold leading-3 not-italic">
             {page}
           </h1>
-          <Range />
+          <Range
+            progressColor={progressColor}
+            progressWidth={progressWidth}
+          />
         </div>
 
         <div className="flex items-center">

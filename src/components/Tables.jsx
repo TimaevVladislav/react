@@ -1,5 +1,5 @@
 import React from "react"
-export const Table = ({ date, email, price }) => (
+export const Tables = ({ date, email, price }) => (
   <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
     <table className="w-full text-sm text-left">
       <thead className="bg-[#21283B] text-white text-xs">
@@ -56,7 +56,7 @@ export const Table = ({ date, email, price }) => (
 
 export const TableHome = ({ email, account }) => (
   <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-    <table className="w-full text-sm text-left">
+    <table className="w-full bg-table-banner text-sm text-left">
       <thead className="bg-[#21283B] text-white text-xs ">
       <tr>
         <th scope="col" className="px-6 py-5 text-[14px]">

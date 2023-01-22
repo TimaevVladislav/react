@@ -39,3 +39,23 @@ p, tbody {
     color: white;
     border: 1px solid;
 }
+
+.progress-home {
+    background: linear-gradient(270deg, #15A655 0%, #1AB7AD 101.39%);
+}
+
+.progress-refferral {
+    background: linear-gradient(270deg, #15A655 0%, #63AA2E 101.39%);
+}
+
+.progress-settings {
+    background: linear-gradient(270deg, #A65215 0%, #A8AA2E 101.39%);
+}
+
+.progress-rates {
+    background: linear-gradient(270deg, #A61515 0%, #BF8138 101.39%);
+}
+
+.progress-payment {
+    background: #EE411B;
+}

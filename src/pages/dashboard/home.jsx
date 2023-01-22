@@ -1,10 +1,11 @@
 import React from "react"
 import {Heading} from "@/components/Heading.jsx"
-import {TableHome} from "@/components/Table.jsx"
+import {TableHome} from "@/components/Tables.jsx"
 import {DashboardNavbar, Sidenav} from "@/widgets/layout/index.js"
 
 import middle from "/public/icons/main-icons/middle.svg"
 import routes from "@/routes.jsx"
+
 
 const TableFields = () => (
   <tbody className="font-bold text-[#919EAB]">
@@ -50,11 +51,22 @@ const TableFields = () => (
 )
 
 export function Home() {
+
+  const progressRange = {
+    color: "progress-home h-1.5 rounded-full",
+    width: "w-[119px]"
+  }
+
   return (
     <div className="flex">
         <Sidenav routes={routes} brandImg="/logo.png" />
       <div>
-        <DashboardNavbar icon={middle} title={"accteam ..."} />
+        <DashboardNavbar
+          icon={middle}
+          title={"accteam ..."}
+          progressColor={progressRange.color}
+          progressWidth={progressRange.width}
+        />
         <div className="mt-12">
           <Heading heading="Обзор" />
           <div className="rounded-[7px]">
