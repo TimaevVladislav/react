@@ -47,7 +47,7 @@ export function Rates() {
    <div className="flex">
      <Sidenav routes={routes} brandImg="/logo.png" />
      <div>
-       <DashboardNavbar icon={base} />
+       <DashboardNavbar icon={base} title={"ksy92"} />
        <div className="mx-auto my-20 flex max-w-screen-lg flex-col gap-1">
          <Heading heading="Тарифы" />
          <div className="container mx-auto">

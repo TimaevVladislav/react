@@ -5,8 +5,6 @@ import logo from "/public/logo.png"
 import apple from "/public/icons/apple.png"
 import penguin from "/public/icons/penguin.svg"
 import cube from "/public/icons/cube.svg"
-import website from "/public/icons/website.svg"
-import light from "/public/icons/light.svg"
 
 
 import { IconButton } from "@material-tailwind/react"
@@ -19,12 +17,12 @@ export function Sidenav({ brandImg, brandName, routes }) {
   const [controller, dispatch] = useMaterialTailwindController()
   const { sidenavColor, sidenavType, openSidenav } = controller;
 
-
   return (
     <div>
         <Link to="/" className="flex items-center gap-4 py-6 px-8">
           <img src={logo} alt="logo" />
         </Link>
+
         <IconButton
           variant="text"
           color="white"
@@ -60,7 +58,7 @@ export function Sidenav({ brandImg, brandName, routes }) {
                     //   {name}
                     // </Button>
 
-                    <button className="flex items-center gap-4 px-4 capitalize rounded-none font-bold">
+                    <button className="flex items-center gap-4 px-4 rounded-none font-bold text-[14px]">
                       <img src={icon} alt={name} />
 
                       {name}

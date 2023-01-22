@@ -209,7 +209,7 @@ export function Payment () {
     <div className="flex">
       <Sidenav routes={routes} brandImg="/logo.png" />
       <div className="mx-auto my-20 flex max-w-screen-lg flex-col gap-8">
-        <DashboardNavbar icon={team} />
+        <DashboardNavbar icon={team} title={"ksy92"} />
         <Heading heading="Оплата" />
         <div className="relative overflow-x-auto shadow-md sm:rounded-lg text-white font-bold">
          <PaymentCard />

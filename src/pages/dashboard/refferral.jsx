@@ -11,7 +11,7 @@ export function Refferral() {
     <div className="flex">
       <Sidenav routes={routes} brandImg="/logo.png" />
       <div>
-        <DashboardNavbar icon={free} />
+        <DashboardNavbar icon={free} title={"ksy92"} />
         <div className="mx-auto my-20 flex max-w-screen-lg flex-col gap-8">
           <div>
             <div className="flex justify-between">

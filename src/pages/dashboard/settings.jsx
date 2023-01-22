@@ -9,7 +9,7 @@ export function Settings() {
    <div className="flex">
      <Sidenav routes={routes} brandImg="/logo.png" />
      <div>
-       <DashboardNavbar icon={micro} />
+       <DashboardNavbar icon={micro} title={"ksy92"} />
        <div className="mt-12 mb-8 flex flex-col gap-12">
          <Heading heading="Настройки" />
        </div>

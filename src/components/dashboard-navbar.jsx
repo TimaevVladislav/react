@@ -6,9 +6,9 @@ import { useMaterialTailwindController, setOpenSidenav } from "@/context/index.j
 
 import message from "/public/icons/message.svg"
 import bell from "/public/icons/bell.svg"
-import avatar from "/public/images/avatar.png"
 import select from "../../public/icons/select.svg"
 import {Range} from "@/components/Range.jsx"
+import { AvatarNavbar } from "@/components/Avatars.jsx";
 
 const SelectLanguage = () => {
   return (
@@ -21,13 +21,12 @@ const SelectLanguage = () => {
   )
 }
 
-export function DashboardNavbar({icon}) {
+export function DashboardNavbar({icon, title}) {
   const [controller, dispatch] = useMaterialTailwindController()
   const { fixedNavbar, openSidenav } = controller
 
   const { pathname } = useLocation()
   const [layout, page] = pathname.split("/").filter((el) => el !== "")
-
 
   return (
     <Navbar
@@ -36,7 +35,7 @@ export function DashboardNavbar({icon}) {
       fullWidth
       blurred={fixedNavbar}
     >
-      <div className="flex flex-col-reverse justify-between gap-6 md:flex-row md:items-center">
+      <div className="flex pb-[10px] flex-col-reverse justify-between gap-6 md:flex-row md:items-center">
         <div className="capitalize flex ml-[20px]">
           <img src={icon} alt={page} />
           <h1 className="m-auto ml-[10px] text-[#15A655] text-xs font-bold leading-3 not-italic">
@@ -55,9 +54,7 @@ export function DashboardNavbar({icon}) {
             <img src={bell} alt="bell" />
           </div>
 
-          <div>
-            <img className="object-cover w-16 h-16 border-2 border-[#31373F] rounded-full" src={avatar} alt="Avatar" />
-          </div>
+          <AvatarNavbar title={title}/>
 
           <IconButton
             variant="text"

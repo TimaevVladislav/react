@@ -54,7 +54,7 @@ export function Home() {
     <div className="flex">
         <Sidenav routes={routes} brandImg="/logo.png" />
       <div>
-        <DashboardNavbar icon={middle} />
+        <DashboardNavbar icon={middle} title={"accteam ..."} />
         <div className="mt-12">
           <Heading heading="Обзор" />
           <div className="rounded-[7px]">
