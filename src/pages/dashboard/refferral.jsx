@@ -6,6 +6,8 @@ import {DashboardNavbar, Sidenav} from "@/widgets/layout/index.js"
 import free from "/public/icons/main-icons/free.svg"
 import routes from "@/routes.jsx"
 
+const Pagination = () => null
+
 export function Refferral() {
   return (
     <div className="flex">

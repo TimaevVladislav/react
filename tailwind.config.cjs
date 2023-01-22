@@ -7,9 +7,10 @@ module.exports = withMT({
     extend: {
       backgroundImage: {
         'table-banner': "url('/public/images/table-banner.png')",
-
+        "refferral": "url('/public/images/refferral.png')",
+        "statistics": "url('/public/images/statistics.png')"
       }
     },
   },
   plugins: [],
-});
+})
