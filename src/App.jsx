@@ -5,7 +5,7 @@ function App() {
   return (
     <Routes>
       <Route path="/dashboard/*" element={<Dashboard />} />
-      <Route path="*" element={<Navigate to="/dashboard/middle" replace />} />
+      <Route path="*" element={<Navigate to="/dashboard/homer" replace />} />
     </Routes>
   );
 }

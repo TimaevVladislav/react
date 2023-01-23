@@ -15,7 +15,7 @@ export const routes = [
       {
         icon: view,
         name: "Обзор",
-        path: "/home",
+        path: "/middle",
         element: <Home />
       },
       {

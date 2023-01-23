@@ -13,8 +13,8 @@ export function Dashboard() {
   const [controller, dispatch] = useMaterialTailwindController()
 
   return (
-    <div className="flex m-auto">
-      <div className="p-4 xl:ml-80 bg-[#161A27] rounded-[25px]">
+    <div className="flex justify-center">
+      <div className="p-4 mt-[50px] bg-[#161A27] rounded-[25px]">
         <Configurator />
         <IconButton
           size="lg"
@@ -42,6 +42,6 @@ export function Dashboard() {
   );
 }
 
-Dashboard.displayName = "/src/layout/dashboard.jsx";
+Dashboard.displayName = "/src/layout/dashboard.jsx"
 
-export default Dashboard;
+export default Dashboard

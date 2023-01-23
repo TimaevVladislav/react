@@ -15,11 +15,10 @@ import { useMaterialTailwindController, setOpenSidenav } from "@/context"
 export function Sidenav({ brandImg, brandName, routes }) {
 
   const [controller, dispatch] = useMaterialTailwindController()
-  const { sidenavColor, sidenavType, openSidenav } = controller;
 
   return (
     <div>
-        <Link to="/" className="flex items-center gap-4 py-6 px-8">
+        <Link to="/" className="flex items-center gap-4 py-6 px-8 pb-[50px]">
           <img src={logo} alt="logo" />
         </Link>
 
