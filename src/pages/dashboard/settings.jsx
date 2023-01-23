@@ -14,7 +14,7 @@ export function Settings() {
   return (
    <div className="flex">
      <Sidenav routes={routes} brandImg="/logo.png" />
-     <div>
+     <div className="w-[825px] h-[650px]">
        <DashboardNavbar
          icon={micro}
          title={"ksy92"}

@@ -211,7 +211,7 @@ export function Payment () {
   return (
     <div className="flex">
       <Sidenav routes={routes} brandImg="/logo.png" />
-      <div className="mx-auto my-20 flex max-w-screen-lg flex-col gap-8">
+      <div className="w-[825px] h-[650px]">
         <DashboardNavbar
           title={"ksy92"}
           icon={team}

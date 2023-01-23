@@ -52,7 +52,7 @@ export function Rates() {
   return (
    <div className="flex">
      <Sidenav routes={routes} brandImg="/logo.png" />
-     <div>
+     <div className="w-[825px] h-[650px]">
        <DashboardNavbar
          icon={base}
          title={"ksy92"}
