@@ -10,7 +10,6 @@ import select from "../../public/icons/select.svg"
 
 import {Range} from "@/components/Ranges.jsx"
 import {AvatarNavbar} from "@/components/Avatars.jsx"
-import {Notification} from "@/components/Notification.jsx"
 
 const SelectLanguage = () => {
   return (
@@ -49,13 +48,21 @@ export function DashboardNavbar({icon, title, color, width, progressTitle}) {
         <div className="flex items-center">
           <SelectLanguage />
          <div className="p-4 pt-0 ml-2">
-           <Notification color="#7750F8" />
+           <div className="pt-0 inline-flex relative w-fit">
+             <div className={`bg-[#7750F8] mt-[7px] ml-[3px]  absolute inline-block top-0 left-0.5 bottom-auto left-auto translate-x-2/4 -translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 px-1 h-[16px] w-[16px] text-[11px] text-center whitespace-nowrap align-baseline font-bold text-white rounded-full z-10`}>
+               5
+             </div>
+           </div>
            <img src={message} alt="message" />
          </div>
 
 
           <div className="p-4 pt-0">
-            <Notification color="#15A655" />
+            <div className="pt-0 inline-flex relative w-fit">
+              <div className={`bg-[#15A655]  mt-[8px] absolute inline-block top-0 left-0.5 bottom-auto left-auto translate-x-2/4 -translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 px-1 h-[16px] w-[16px] text-[11px] text-center whitespace-nowrap align-baseline font-bold text-white rounded-full z-10`}>
+                5
+              </div>
+            </div>
             <img src={bell} alt="bell" />
           </div>
 
