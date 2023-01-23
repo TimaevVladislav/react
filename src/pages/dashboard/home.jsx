@@ -67,7 +67,7 @@ export function Home() {
           color={progressRange.color}
           width={progressRange.width}
         />
-        <div className="mt-12">
+        <div className="mt-11 ml-[30px] mr-[20px]">
           <Heading heading="Обзор" />
           <div className="rounded-[7px]">
             <TableHome account="Аккаунт" email="accteam@mail.ru" />

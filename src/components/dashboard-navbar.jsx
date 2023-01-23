@@ -10,6 +10,7 @@ import select from "../../public/icons/select.svg"
 
 import {Range} from "@/components/Ranges.jsx"
 import {AvatarNavbar} from "@/components/Avatars.jsx"
+import {Notification} from "@/components/Notification.jsx"
 
 const SelectLanguage = () => {
   return (
@@ -47,11 +48,14 @@ export function DashboardNavbar({icon, title, color, width, progressTitle}) {
 
         <div className="flex items-center">
           <SelectLanguage />
-         <div className="p-4 ml-2">
+         <div className="p-4 pt-0 ml-2">
+           <Notification color="#7750F8" />
            <img src={message} alt="message" />
          </div>
 
-          <div className="p-4">
+
+          <div className="p-4 pt-0">
+            <Notification color="#15A655" />
             <img src={bell} alt="bell" />
           </div>
 
