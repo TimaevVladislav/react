@@ -7,9 +7,9 @@ export const Button = () => (
   <div>
     <div className="flex w-full flex-wrap justify-between  items-center gap-6">
       <FooterDashboard />
-      <button type="button" className="rounded text-white bg-[#15A655] hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-1  text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
+      <button type="button" className="h-[36px] w-[190px] rounded text-white bg-[#15A655] hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-1  text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
         <img src={message} alt="message" className="pr-1.5" />
-        <div className="text-xl font-mono font-bold pt-0.5">
+        <div className="font-bold pb-1 text-[13px] w-[190px]">
           Помощь оператора
         </div>
       </button>
