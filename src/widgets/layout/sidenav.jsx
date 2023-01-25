@@ -6,11 +6,10 @@ import apple from "/public/icons/apple.png"
 import penguin from "/public/icons/penguin.svg"
 import cube from "/public/icons/cube.svg"
 
-
 import { IconButton } from "@material-tailwind/react"
 
 
-import { useMaterialTailwindController, setOpenSidenav } from "@/context"
+import {useMaterialTailwindController, setOpenSidenav} from "@/context"
 
 export function Sidenav({ brandImg, brandName, routes }) {
 
@@ -28,15 +27,12 @@ export function Sidenav({ brandImg, brandName, routes }) {
           size="sm"
           ripple={false}
           className="absolute right-0 top-0 grid rounded-br-none rounded-tl-none xl:hidden"
-          onClick={() => setOpenSidenav(dispatch, false)}
-        >
-
+          onClick={() => setOpenSidenav(dispatch, false)}>
         </IconButton>
 
       <div className="m-4">
         {routes.map(({ layout, title, pages }, key) => (
-          <ul key={key} className="mb-4 flex flex-col gap-1">
-
+          <ul key={key} className="mb-4 flex flex-col gap-5">
             {title && (
               <li className="mx-3.5 mt-4 mb-2">
                 {title}
@@ -59,7 +55,6 @@ export function Sidenav({ brandImg, brandName, routes }) {
 
                     <button className="flex items-center gap-4 px-4 rounded-none font-bold text-[14px]">
                       <img src={icon} alt={name} />
-
                       {name}
                     </button>
                   )}
