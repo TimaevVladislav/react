@@ -6,12 +6,12 @@ import apple from "/public/icons/apple.png"
 import penguin from "/public/icons/penguin.svg"
 import cube from "/public/icons/cube.svg"
 
-import { IconButton } from "@material-tailwind/react"
+import {IconButton} from "@material-tailwind/react"
 
 
 import {useMaterialTailwindController, setOpenSidenav} from "@/context"
 
-export function Sidenav({ brandImg, brandName, routes }) {
+export function Sidenav({ routes }) {
 
   const [controller, dispatch] = useMaterialTailwindController()
 
@@ -43,16 +43,6 @@ export function Sidenav({ brandImg, brandName, routes }) {
               <li key={name}>
                 <NavLink to={`/${layout}${path}`}>
                   {({ isActive }) => (
-                    // <Button variant={isActive ? "gradient" : "text"}
-                    //   color={isActive ? sidenavColor : sidenavType === "dark" ? "#919EAB" : "#919EAB"}
-                    //   className="flex items-center gap-4 px-4 capitalize rounded-none"
-                    //   fullWidth
-                    // >
-                    //   <img src={icon} alt={name} />
-                    //
-                    //   {name}
-                    // </Button>
-
                     <button className="flex items-center gap-4 px-4 rounded-none font-bold text-[14px]">
                       <img src={icon} alt={name} />
                       {name}
